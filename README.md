@@ -69,7 +69,8 @@ npm run pm2:reload
 ## Notes
 * pm2 실행 옵션은 ecosystem.config.js 에서 설정
 ```
-pm2 start ecosystem.config.js --env production #env 옵션으로 모드설정
+# env 옵션으로 모드설정(development | production)
+pm2 start ecosystem.config.js --env production 
 ```
 * pm2 를 어디에서나 실행 명령어로 사용하기 위해서는 글로벌로 설치 되어 있어야한다.
 * cluster mode 로 구동 시 instance 개수를 설정할 수 있다.
